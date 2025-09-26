@@ -1,4 +1,4 @@
-package class_adapter.speed_classes;
+package adapter.speed_classes;
 
 public class KilometerPerHour {
     private double speedKmh;

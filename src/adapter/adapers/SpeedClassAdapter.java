@@ -1,12 +1,12 @@
-package class_adapter;
+package adapter.adapers;
 
-import class_adapter.speed_classes.KilometerPerHour;
-import class_adapter.speed_classes.MilesPerHour;
+import adapter.speed_classes.KilometerPerHour;
+import adapter.speed_classes.MilesPerHour;
 
-public class SpeedAdapter extends KilometerPerHour {
+public class SpeedClassAdapter extends KilometerPerHour {
     private MilesPerHour milesPerHour;
 
-    public SpeedAdapter(MilesPerHour milesPerHour) {
+    public SpeedClassAdapter(MilesPerHour milesPerHour) {
         super(milesPerHour.getSpeedMh() * 1.60934);
         this.milesPerHour = milesPerHour;
     }
