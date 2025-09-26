@@ -44,8 +44,8 @@ public class Main {
         KazakhRoadLimit speed5_In_Kmh_1 = new KazakhRoadLimit(new KilometerPerHour(adapter1_1.getSpeedKmh()));
         KazakhRoadLimit speed6_In_Kmh_2 = new KazakhRoadLimit(new KilometerPerHour(adapter2_1.getSpeedKmh()));
         System.out.println();
-        System.out.println("Is speed 5 with " + speed5_In_Kmh.getSpeedLimitKmh() + " km per hour safe in city? " + speed5_In_Kmh_1.isSpeedLimitReached());
-        System.out.println("Is speed 6 with " + speed6_In_Kmh.getSpeedLimitKmh() + " km per hour safe in city? " + speed6_In_Kmh_2.isSpeedLimitReached());
+        System.out.println("Is speed 5 with " + speed5_In_Kmh_1.getSpeedLimitKmh() + " km per hour safe in city? " + speed5_In_Kmh_1.isSpeedLimitReached());
+        System.out.println("Is speed 6 with " + speed6_In_Kmh_2.getSpeedLimitKmh() + " km per hour safe in city? " + speed6_In_Kmh_2.isSpeedLimitReached());
 
     }
 }

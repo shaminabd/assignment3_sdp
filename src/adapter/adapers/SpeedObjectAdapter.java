@@ -3,14 +3,16 @@ package adapter.adapers;
 import adapter.speed_classes.MilesPerHour;
 import adapter.speed_interface.SpeedConversionInterface;
 
-public class SpeedObjectAdapter extends MilesPerHour implements SpeedConversionInterface {
+public class SpeedObjectAdapter implements SpeedConversionInterface {
+    private MilesPerHour milesPerHour;
+
     public SpeedObjectAdapter(MilesPerHour milesPerHour) {
-        super(milesPerHour.getSpeedMh());
+        this.milesPerHour = milesPerHour;
     }
 
     @Override
     public double getSpeedKmh() {
-        return getSpeedMh()*1.60934;
+        return milesPerHour.getSpeedMh()*1.60934;
     }
 
 }
